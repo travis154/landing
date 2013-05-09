@@ -1,0 +1,205 @@
+<html>
+	<head>
+		<title></title>
+		<link rel="stylesheet" href="css/bootstrap.css">
+
+		<style>
+		.clear {
+			clear: both;
+		}
+
+		.container {
+			width: 980px;
+		}
+
+		#powered {
+			font-size: 10px;
+			color: #999;
+			margin-top: -5px;
+		}
+		header {
+			background: rgb(255,255,255); /* Old browsers */
+			background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(244,244,244,1) 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(244,244,244,1))); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(244,244,244,1) 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(244,244,244,1) 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(244,244,244,1) 100%); /* IE10+ */
+			background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(244,244,244,1) 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f4f4f4',GradientType=0 ); /* IE6-9 */
+			width: 100%;
+			height: 60px;
+			border-bottom: 1px solid #fff;
+			box-shadow: 0 1px 0 #ddd;
+			padding-top: 30px;
+		}
+
+		.btn-primary {
+			background: rgb(20,140,211); /* Old browsers */
+			background: -moz-linear-gradient(top, rgba(20,140,211,1) 0%, rgba(13,123,203,1) 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(20,140,211,1)), color-stop(100%,rgba(13,123,203,1))); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top, rgba(20,140,211,1) 0%,rgba(13,123,203,1) 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top, rgba(20,140,211,1) 0%,rgba(13,123,203,1) 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top, rgba(20,140,211,1) 0%,rgba(13,123,203,1) 100%); /* IE10+ */
+			background: linear-gradient(to bottom, rgba(20,140,211,1) 0%,rgba(13,123,203,1) 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#148cd3', endColorstr='#0d7bcb',GradientType=0 ); /* IE6-9 */
+		}
+
+		#search-input {
+			padding: 14px;
+		}
+
+		#main {
+			width: 980px;
+			position: relative;
+		}
+
+		#main-sub {
+			
+		}
+
+		#rol-logo {
+			width: 100px;
+			margin-top: -10px;
+		}
+
+		.rol-box {
+			text-align: center;
+			padding-top: 30px;
+			padding-bottom: 20px;
+			min-height: 100px;
+		}
+		.rol-box:hover .logo-ico{
+			  width:250px;
+		    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
+		    -webkit-filter: grayscale(0%);
+		}
+		.last {
+			border: 0px;
+		}
+
+		.rol-box h3 {
+			font-weight: normal;
+			color: #007AC7;
+		}
+		.rol-box a {
+			color: #999;
+			font-weight: bold;
+		}
+
+		.rol-box a:hover {
+			color: #666;
+			text-decoration: none;
+		}
+
+		.logo-ico {
+			width: 150px;
+			filter: gray; /* IE6-9 */
+		    -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+		    -webkit-transition: all .3s ease; /* Fade to color for Chrome and Safari */
+		    -webkit-backface-visibility: hidden; /* Fix for transition flickering */
+			-moz-transition:all .3s ease; 
+			-o-transition:all .3s ease; 
+			transition:all .3s ease; 
+		}
+
+		.logo-ico:hover {
+		  
+		}
+
+		.inner-box {
+			margin: 10px 30px;
+		}
+
+		.inner-box ul {
+			margin: 0;
+		}
+
+		.inner-box li {
+			padding: 10px;
+		}
+
+		.inner-box li:hover {
+			background: whiteSmoke;
+		}
+
+		footer {
+			background: rgb(242,242,242); /* Old browsers */
+			background: -moz-linear-gradient(top, rgba(242,242,242,1) 0%, rgba(255,255,255,1) 37%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(242,242,242,1)), color-stop(37%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top, rgba(242,242,242,1) 0%,rgba(255,255,255,1) 37%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top, rgba(242,242,242,1) 0%,rgba(255,255,255,1) 37%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top, rgba(242,242,242,1) 0%,rgba(255,255,255,1) 37%); /* IE10+ */
+			background: linear-gradient(to bottom, rgba(242,242,242,1) 0%,rgba(255,255,255,1) 37%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f2f2', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+			bottom: 0;
+			height: 50px;
+			margin-top:100px;
+			width: 95%;
+			color: #999;
+			padding-top: 30px;
+			border-top: 1px solid #ddd;
+			text-align: center;
+		}
+		</style>
+		<script src="js/modernizr.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<div class="row">
+					<div class="span2">
+						<a href='http://rol.net.mv' title='Visit Raajje Online'><img id="rol-logo" src="img/ROL_logo.png"></a>
+					</div>
+					<div class="span7">
+						<form action='http://google.com/search'>
+							<div class="input-append">
+							  <input id="search-input" name='q' placeholder='Google search' class="span6" id="appendedDropdownButton" type="text">
+							  <div class="btn-group">
+							    <button class="btn btn-primary">Search</button>
+							  </div>
+							</div>
+						</form>
+					</div>
+					<div class="span3" id="powered">Powered by Google</div>
+				</div>
+			</div>
+		</header>
+		<section class="row" style='height:405px'>
+			<div id="main" class="container">
+				<div id="main-sub">
+					<div class="span6 rol-box">
+						<a href='http://video2home.net'><img class="logo-ico" src="img/v2h_logo.png"></a>
+						<div class="inner-box">
+							<ul class="unstyled">
+								<li><a href="#">MOVIES</a></li>
+								<li><a href="#">CARTOONS</a></li>
+								<li><a href="#">TV SHOWS</a></li>
+								<li><a href="#">ANIME</a></li>
+								<li><a href="#">APPLICATIONS</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="span6 rol-box last">
+						<a href=''><img class="logo-ico" src="img/watch tv.png"></a>
+						<div class="inner-box">
+							<ul class="unstyled">
+								<li><a href="#">TVM</a></li>
+								<li><a href="#">DHITV</a></li>
+								<li><a href="#">VTV</a></li>
+								<li><a href="#">RAAJJETV</a></li>
+								<li><a href="#">PPMTV</a></li>
+							</ul>
+						</div>
+					</div>
+					<br class="clear">
+				</div>
+			</div>
+		</section>
+			<footer class="container">
+			 <span>&copy; 2013 ROL - <a href=''>Terms & Conditions</a></span>
+			</footer>
+		
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>
